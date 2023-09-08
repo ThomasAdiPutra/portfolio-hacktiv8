@@ -32,7 +32,7 @@ export default function Sidebar({ handleDarkMode }) {
             About
           </Link>
           <Link to={"/experience"} className="hover:text-white">
-            + Experience
+            Experience
           </Link>
           <Link to={"/education"} className="hover:text-white">
             Education
