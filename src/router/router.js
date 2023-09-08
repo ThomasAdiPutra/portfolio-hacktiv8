@@ -7,7 +7,7 @@ import Skill from "../pages/skill";
 import Interest from "../pages/interest";
 import Award from "../pages/award";
 
-const routes = createBrowserRouter([
+const router = createBrowserRouter([
   {
     element: <Layout />,
     children: [
@@ -19,6 +19,8 @@ const routes = createBrowserRouter([
       { path: "/awards", element: <Award /> },
     ],
   },
-]);
+], {
+  basename: "/portfolio",
+});
 
-export default routes;
+export default router;
