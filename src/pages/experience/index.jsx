@@ -32,8 +32,8 @@ export default function Experience() {
     <>
       <div className="space-y-10">
         <div className="text-5xl font-bold">EXPERIENCE</div>
-        {experiences.map((experience) => (
-          <ExperienceDetail {...experience} />
+        {experiences.map((experience, index) => (
+          <ExperienceDetail key={index} {...experience} />
         ))}
       </div>
     </>
